@@ -1,2 +1,3 @@
-# frontend-programacion-iv-crear-repo-ClimaCampus
-Erick Alvarez y Daniel Guevara Arroyave
+# ClimaCampus
+# Erick Alvarez Usuario 1 
+# Daniel Guevara Usuario 2
