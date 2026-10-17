@@ -12,7 +12,7 @@ permissions:
 jobs:
     construir:
         runs-on: ubuntu-latest
-        steps::
+        steps:
             - uses: actions/checkout@v4
             - uses: withastro/checkout@v3
               with:
