@@ -1,0 +1,63 @@
+/* Sistema de Diseño ClimaCampus*/
+
+:root{
+    /*color de marca*/
+    --color-marca: #15c1ad;
+    --color-marca-oscuro: #19b33d;
+    --color-marca-suave: #eee2ee;
+    --color-marca-borde: #f4df8d;
+
+    /* neutros calidos*/
+    --color-texto: #000;
+    --color-texto-suave: #54534e;
+    --color-texto-tenue:#6f392c;
+    --color-fondo: #ffff;
+    --color-lienzo:#16c0af; 
+    --color-superficie:#437dea;
+    --color-borde:#14e3df;
+    --color-borde-fuerte:#0715d7;
+
+
+    /* color estado */
+    --color-error:#f4df8d;
+    --color-error-suave:#f4df8d;
+    --color-exito:#f4df8d;
+    --color-exito-suave:#f4df8d;
+
+    /* tipografia */
+    --fuente: "Iowan Old Style" , "Palatino Linotype" , Palatino, Georgia, serif;
+    --fuente-texto: system-ui, -apple-system, "Segoe UI" , Roboto, Arial, sans-serif;
+    --texto-xxl: 2.75rem;
+    --texto-xl: 2rem;
+    --texto-l: 1.5rem;
+    --texto-M: 1.125rem;
+    --texto-base: 1rem;
+    --texto-s: 0.875rem;
+    --texto-xs: 0.75rem;
+
+    /* espaciado */
+    --esp-1: 0.25rem;
+    --esp-2: 0.5rem;
+    --esp-3: 1rem;
+    --esp-4: 1.5rem;
+    --esp-5: 2rem;
+    --esp-6: 3rem;
+    --esp-17: 4.5rem;
+
+    /* forma */
+    --radio-s: 8px;
+    --radio-m: 14px;
+    --radio-l: 22px;
+    --radio-pildora: 999px;
+
+    /* elevacion */
+    --sombra-1: 0 1px 2px rgba(36, 27, 22, 0.06);
+    --sombra-2: 0 6px 20px rgba(36, 27, 22, 0.18);
+    --sombra-3: 0 18px 40px -16px rgba(36, 27, 22, 0.28);
+
+    /* medidas */
+    --ancho-maximo: 1180px;
+    --ancho-lectura: 68ch;
+    --transicion: 160ms ease;
+    
+}
