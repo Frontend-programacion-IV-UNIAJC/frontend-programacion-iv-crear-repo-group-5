@@ -1,0 +1,53 @@
+---
+// Layout.Astro
+// encabezado y pie de pagina Comunes: todas las paginas
+// lo que cambia de una pagina de otra ingresa por <slot />.
+
+import Header from "../component/layout/Header.astro";
+import Footer from "../component/layout/Footer.astro"; 
+import "../styles/variables.css";
+import "../styles/global.css";
+
+const base = import.meta.env.BASE_URL;
+const {titulo, descripcion, activo, ancho = "normal"} = Astro.props;
+
+---
+
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name ="theme-color" content="b4451f0" />
+    <link rel="icon" type="image/svg+xml" href="{'${base}favicon.svg'}"/>
+    <title>{titulo}</title>
+    <meta name="description" content="{description}">
+</head>
+
+<body>
+    <a class="saltar" href="#contenido" >Saltar al contenido</a>
+
+    <Header activo="{activo}"/>
+    <main id="contenido" class=list = {["principal",{principal-ancho: ancho === "ancho"}]}></main>
+
+    <slot/>
+    
+    <Footer />
+
+</body>
+</html>
+
+<style>
+    .principal {
+        padding-top:var(--esp-6);
+        padding-bottom: var(--esp-6);
+    }
+
+    .principal--ancho {
+        padding-top: 0;
+    }
+
+
+
+</style>
