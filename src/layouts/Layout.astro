@@ -19,8 +19,8 @@ const {titulo, descripcion, activo, ancho = "normal"} = Astro.props;
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name ="theme-color" content="b4451f0" />
-    <link rel="icon" type="image/svg+xml" href="{'${base}favicon.svg'}"/>
+    <meta name ="theme-color" content="#b4451f0" />
+    <link rel="icon" type="image/svg+xml" href={`${base}favicon.svg`}/>
     <title>{titulo}</title>
     <meta name="description" content="{description}">
 </head>
@@ -28,10 +28,13 @@ const {titulo, descripcion, activo, ancho = "normal"} = Astro.props;
 <body>
     <a class="saltar" href="#contenido" >Saltar al contenido</a>
 
-    <Header activo="{activo}"/>
-    <main id="contenido" class=list = {["principal",{principal-ancho: ancho === "ancho"}]}></main>
+    <Header activo={activo}/>
+    <main id="contenido" class:list = {["principal", {"principal-ancho": ancho === "ancho"
 
-    <slot/>
+    }]}>
+
+        <slot/>
+    </main>
 
     <Footer />
 
@@ -47,7 +50,5 @@ const {titulo, descripcion, activo, ancho = "normal"} = Astro.props;
     .principal--ancho {
         padding-top: 0;
     }
-
-
-
+    
 </style>
