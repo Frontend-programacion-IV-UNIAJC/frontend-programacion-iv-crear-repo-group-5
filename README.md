@@ -3,6 +3,10 @@
 
 # Astro Starter Kit: Minimal
 
+¿En que ancho pasa la portada a dos columnas y que linea del CSS lo decide?
+Cuando el zoom pasa a 200% pasa a una sola columna.
+En la portada interior, con el grid-template-columns. 
+
 ```sh
 npm create astro@latest -- --template minimal
 ```
