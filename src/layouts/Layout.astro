@@ -3,8 +3,8 @@
 // encabezado y pie de pagina Comunes: todas las paginas
 // lo que cambia de una pagina de otra ingresa por <slot />.
 
-import Header from "../component/layout/Header.astro";
-import Footer from "../component/layout/Footer.astro"; 
+import Header from "../components/layout/Header.astro";
+import Footer from "../components/layout/Footer.astro"; 
 import "../styles/variables.css";
 import "../styles/global.css";
 
@@ -32,7 +32,7 @@ const {titulo, descripcion, activo, ancho = "normal"} = Astro.props;
     <main id="contenido" class=list = {["principal",{principal-ancho: ancho === "ancho"}]}></main>
 
     <slot/>
-    
+
     <Footer />
 
 </body>
